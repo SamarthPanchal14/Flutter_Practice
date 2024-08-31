@@ -358,6 +358,12 @@ class _loginState extends State<login> {
               ),
               ElevatedButton(
                 onPressed: () {
+                  Navigator.pushNamed(context, '/loginscreen2');
+                },
+                child: Text('go to login2'),
+              ),
+              ElevatedButton(
+                onPressed: () {
                   Navigator.pushNamed(context, '/screen1');
                 },
                 child: Text('go to screen1'),
