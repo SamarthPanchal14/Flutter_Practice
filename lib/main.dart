@@ -9,6 +9,7 @@ import 'package:flutterpractise1/routes.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
      onGenerateRoute: myRoutes.generateRoute,
       //home: row_colomn(),
     ),

@@ -364,6 +364,12 @@ class _loginState extends State<login> {
               ),
               ElevatedButton(
                 onPressed: () {
+                  Navigator.pushNamed(context, '/hotelscreen');
+                },
+                child: Text('go to Hotel_Screen'),
+              ),
+              ElevatedButton(
+                onPressed: () {
                   Navigator.pushNamed(context, '/screen1');
                 },
                 child: Text('go to screen1'),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterpractise1/Navigator/HotelScreen.dart';
 import 'package:flutterpractise1/Navigator/login.dart';
 import 'package:flutterpractise1/Navigator/loginscreen2.dart';
 import 'package:flutterpractise1/Navigator/profilepage.dart';
@@ -24,6 +25,8 @@ class myRoutes{
         return MaterialPageRoute(builder: (_) => profilepage());
       case '/loginscreen2':
         return MaterialPageRoute(builder: (_) => loginscreen2());
+      case '/hotelscreen':
+        return MaterialPageRoute(builder: (_) => hotelscreen());
 
       default:
         return MaterialPageRoute(builder: (_) => Scaffold(
