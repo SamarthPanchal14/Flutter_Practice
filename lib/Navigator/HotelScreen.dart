@@ -101,9 +101,44 @@ class _hotelscreenState extends State<hotelscreen> {
                 ),
               ),
             ),
+
           ],
         ),
-      )
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (index) {},
+        selectedItemColor: Colors.red,
+        unselectedItemColor: Colors.black,
+        backgroundColor: Colors.white,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Explore',
+            activeIcon: Icon(Icons.search, color: Colors.red),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite_border),
+            label: 'Wishlists',
+            activeIcon: Icon(Icons.favorite, color: Colors.red),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.trip_origin),
+            label: 'Trips',
+            activeIcon: Icon(Icons.trip_origin, color: Colors.red),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.messenger_outline),
+            label: 'Messages',
+            activeIcon: Icon(Icons.messenger_outline, color: Colors.red),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_2_outlined),
+            label: 'Profile',
+            activeIcon: Icon(Icons.person_2_outlined, color: Colors.red),
+          ),
+        ],
+        type: BottomNavigationBarType.fixed,
+      ),
     );
   }
 }
